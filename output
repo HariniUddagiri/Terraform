@@ -1,375 +1,212 @@
-{
-    "ami" = "ami-09c813fb71547fc4f"
-    "arn" = "arn:aws:ec2:us-east-1:897729138818:instance/i-042271177a2fa8c98"
-    "associate_public_ip_address" = true
-    "availability_zone" = "us-east-1b"
-    "capacity_reservation_specification" = tolist([
-      {
-        "capacity_reservation_preference" = "open"
-        "capacity_reservation_target" = tolist([])
-      },
-    ])
-    "cpu_core_count" = 1
-    "cpu_options" = tolist([
-      {
-        "amd_sev_snp" = ""
-        "core_count" = 1
-        "threads_per_core" = 1
-      },
-    ])
-    "cpu_threads_per_core" = 1
-    "credit_specification" = tolist([
-      {
-        "cpu_credits" = "standard"
-      },
-    ])
-    "disable_api_stop" = false
-    "disable_api_termination" = false
-    "ebs_block_device" = toset([])
-    "ebs_optimized" = false
-    "enable_primary_ipv6" = tobool(null)
-    "enclave_options" = tolist([
-      {
-        "enabled" = false
-      },
-    ])
-    "ephemeral_block_device" = toset([])
-    "get_password_data" = false
-    "hibernation" = false
-    "host_id" = ""
-    "host_resource_group_arn" = tostring(null)
-    "iam_instance_profile" = ""
-    "id" = "i-042271177a2fa8c98"
-    "instance_initiated_shutdown_behavior" = "stop"
-    "instance_lifecycle" = ""
-    "instance_market_options" = tolist([])
-    "instance_state" = "running"
-    "instance_type" = "t2.micro"
-    "ipv6_address_count" = 0
-    "ipv6_addresses" = tolist([])
-    "key_name" = ""
-    "launch_template" = tolist([])
-    "maintenance_options" = tolist([
-      {
-        "auto_recovery" = "default"
-      },
-    ])
-    "metadata_options" = tolist([
-      {
-        "http_endpoint" = "enabled"
-        "http_protocol_ipv6" = "disabled"
-        "http_put_response_hop_limit" = 1
-        "http_tokens" = "optional"
-        "instance_metadata_tags" = "disabled"
-      },
-    ])
-    "monitoring" = false
-    "network_interface" = toset([])
-    "outpost_arn" = ""
-    "password_data" = ""
-    "placement_group" = ""
-    "placement_partition_number" = 0
-    "primary_network_interface_id" = "eni-0547fefffe2fe7dff"
-    "private_dns" = "ip-172-31-31-192.ec2.internal"
-    "private_dns_name_options" = tolist([
-      {
-        "enable_resource_name_dns_a_record" = false
-        "enable_resource_name_dns_aaaa_record" = false
-        "hostname_type" = "ip-name"
-      },
-    ])
-    "private_ip" = "172.31.31.192"
-    "public_dns" = "ec2-3-90-252-164.compute-1.amazonaws.com"
-    "public_ip" = "3.90.252.164"
-    "root_block_device" = tolist([
-      {
-        "delete_on_termination" = true
-        "device_name" = "/dev/sda1"
-        "encrypted" = false
-        "iops" = 3000
-        "kms_key_id" = ""
-        "tags" = tomap({})
-        "tags_all" = tomap({})
-        "throughput" = 125
-        "volume_id" = "vol-0050b54b94a64ac60"
-        "volume_size" = 20
-        "volume_type" = "gp3"
-      },
-    ])
-    "secondary_private_ips" = toset([])
-    "security_groups" = toset([
-      "allow_tls",
-    ])
-    "source_dest_check" = true
-    "spot_instance_request_id" = ""
-    "subnet_id" = "subnet-04c0489f1ed36348a"
-    "tags" = tomap({
-      "Component" = "Backend"
-      "Name" = "mysql"
-      "Project" = "expense"
-    })
-    "tags_all" = tomap({
-      "Component" = "Backend"
-      "Name" = "mysql"
-      "Project" = "expense"
-    })
-    "tenancy" = "default"
-    "timeouts" = null /* object */
-    "user_data" = tostring(null)
-    "user_data_base64" = tostring(null)
-    "user_data_replace_on_change" = false
-    "volume_tags" = tomap(null) /* of string */
-    "vpc_security_group_ids" = toset([
-      "sg-0ba83694128d1978c",
-    ])
-  },
-  {
-    "ami" = "ami-09c813fb71547fc4f"
-    "arn" = "arn:aws:ec2:us-east-1:897729138818:instance/i-079b35e9df6325236"
-    "associate_public_ip_address" = true
-    "availability_zone" = "us-east-1a"
-    "capacity_reservation_specification" = tolist([
-      {
-        "capacity_reservation_preference" = "open"
-        "capacity_reservation_target" = tolist([])
-      },
-    ])
-    "cpu_core_count" = 1
-    "cpu_options" = tolist([
-      {
-        "amd_sev_snp" = ""
-        "core_count" = 1
-        "threads_per_core" = 1
-      },
-    ])
-    "cpu_threads_per_core" = 1
-    "credit_specification" = tolist([
-      {
-        "cpu_credits" = "standard"
-      },
-    ])
-    "disable_api_stop" = false
-    "disable_api_termination" = false
-    "ebs_block_device" = toset([])
-    "ebs_optimized" = false
-    "enable_primary_ipv6" = tobool(null)
-    "enclave_options" = tolist([
-      {
-        "enabled" = false
-      },
-    ])
-    "ephemeral_block_device" = toset([])
-    "get_password_data" = false
-    "hibernation" = false
-    "host_id" = ""
-    "host_resource_group_arn" = tostring(null)
-    "iam_instance_profile" = ""
-    "id" = "i-079b35e9df6325236"
-    "instance_initiated_shutdown_behavior" = "stop"
-    "instance_lifecycle" = ""
-    "instance_market_options" = tolist([])
-    "instance_state" = "running"
-    "instance_type" = "t2.micro"
-    "ipv6_address_count" = 0
-    "ipv6_addresses" = tolist([])
-    "key_name" = ""
-    "launch_template" = tolist([])
-    "maintenance_options" = tolist([
-      {
-        "auto_recovery" = "default"
-      },
-    ])
-    "metadata_options" = tolist([
-      {
-        "http_endpoint" = "enabled"
-        "http_protocol_ipv6" = "disabled"
-        "http_put_response_hop_limit" = 1
-        "http_tokens" = "optional"
-        "instance_metadata_tags" = "disabled"
-      },
-    ])
-    "monitoring" = false
-    "network_interface" = toset([])
-    "outpost_arn" = ""
-    "password_data" = ""
-    "placement_group" = ""
-    "placement_partition_number" = 0
-    "primary_network_interface_id" = "eni-09b8672e24d1b137c"
-    "private_dns" = "ip-172-31-88-6.ec2.internal"
-    "private_dns_name_options" = tolist([
-      {
-        "enable_resource_name_dns_a_record" = false
-        "enable_resource_name_dns_aaaa_record" = false
-        "hostname_type" = "ip-name"
-      },
-    ])
-    "private_ip" = "172.31.88.6"
-    "public_dns" = "ec2-18-212-51-105.compute-1.amazonaws.com"
-    "public_ip" = "18.212.51.105"
-    "root_block_device" = tolist([
-      {
-        "delete_on_termination" = true
-        "device_name" = "/dev/sda1"
-        "encrypted" = false
-        "iops" = 3000
-        "kms_key_id" = ""
-        "tags" = tomap({})
-        "tags_all" = tomap({})
-        "throughput" = 125
-        "volume_id" = "vol-05e948bd0eb0c8efb"
-        "volume_size" = 20
-        "volume_type" = "gp3"
-      },
-    ])
-    "secondary_private_ips" = toset([])
-    "security_groups" = toset([
-      "allow_tls",
-    ])
-    "source_dest_check" = true
-    "spot_instance_request_id" = ""
-    "subnet_id" = "subnet-0d89aa23371aa3eb0"
-    "tags" = tomap({
-      "Component" = "Backend"
-      "Name" = "backend"
-      "Project" = "expense"
-    })
-    "tags_all" = tomap({
-      "Component" = "Backend"
-      "Name" = "backend"
-      "Project" = "expense"
-    })
-    "tenancy" = "default"
-    "timeouts" = null /* object */
-    "user_data" = tostring(null)
-    "user_data_base64" = tostring(null)
-    "user_data_replace_on_change" = false
-    "volume_tags" = tomap(null) /* of string */
-    "vpc_security_group_ids" = toset([
-      "sg-0ba83694128d1978c",
-    ])
-  },
-  {
-    "ami" = "ami-09c813fb71547fc4f"
-    "arn" = "arn:aws:ec2:us-east-1:897729138818:instance/i-02962099662e16786"
-    "associate_public_ip_address" = true
-    "availability_zone" = "us-east-1a"
-    "capacity_reservation_specification" = tolist([
-      {
-        "capacity_reservation_preference" = "open"
-        "capacity_reservation_target" = tolist([])
-      },
-    ])
-    "cpu_core_count" = 1
-    "cpu_options" = tolist([
-      {
-        "amd_sev_snp" = ""
-        "core_count" = 1
-        "threads_per_core" = 1
-      },
-    ])
-    "cpu_threads_per_core" = 1
-    "credit_specification" = tolist([
-      {
-        "cpu_credits" = "standard"
-      },
-    ])
-    "disable_api_stop" = false
-    "disable_api_termination" = false
-    "ebs_block_device" = toset([])
-    "ebs_optimized" = false
-    "enable_primary_ipv6" = tobool(null)
-    "enclave_options" = tolist([
-      {
-        "enabled" = false
-      },
-    ])
-    "ephemeral_block_device" = toset([])
-    "get_password_data" = false
-    "hibernation" = false
-    "host_id" = ""
-    "host_resource_group_arn" = tostring(null)
-    "iam_instance_profile" = ""
-    "id" = "i-02962099662e16786"
-    "instance_initiated_shutdown_behavior" = "stop"
-    "instance_lifecycle" = ""
-    "instance_market_options" = tolist([])
-    "instance_state" = "running"
-    "instance_type" = "t2.micro"
-    "ipv6_address_count" = 0
-    "ipv6_addresses" = tolist([])
-    "key_name" = ""
-    "launch_template" = tolist([])
-    "maintenance_options" = tolist([
-      {
-        "auto_recovery" = "default"
-      },
-    ])
-    "metadata_options" = tolist([
-      {
-        "http_endpoint" = "enabled"
-        "http_protocol_ipv6" = "disabled"
-        "http_put_response_hop_limit" = 1
-        "http_tokens" = "optional"
-        "instance_metadata_tags" = "disabled"
-      },
-    ])
-    "monitoring" = false
-    "network_interface" = toset([])
-    "outpost_arn" = ""
-    "password_data" = ""
-    "placement_group" = ""
-    "placement_partition_number" = 0
-    "primary_network_interface_id" = "eni-0db26d207c809037d"
-    "private_dns" = "ip-172-31-81-4.ec2.internal"
-    "private_dns_name_options" = tolist([
-      {
-        "enable_resource_name_dns_a_record" = false
-        "enable_resource_name_dns_aaaa_record" = false
-        "hostname_type" = "ip-name"
-      },
-    ])
-    "private_ip" = "172.31.81.4"
-    "public_dns" = "ec2-3-83-127-105.compute-1.amazonaws.com"
-    "public_ip" = "3.83.127.105"
-    "root_block_device" = tolist([
-      {
-        "delete_on_termination" = true
-        "device_name" = "/dev/sda1"
-        "encrypted" = false
-        "iops" = 3000
-        "kms_key_id" = ""
-        "tags" = tomap({})
-        "tags_all" = tomap({})
-        "throughput" = 125
-        "volume_id" = "vol-0aa3509434450646d"
-        "volume_size" = 20
-        "volume_type" = "gp3"
-      },
-    ])
-    "secondary_private_ips" = toset([])
-    "security_groups" = toset([
-      "allow_tls",
-    ])
-    "source_dest_check" = true
-    "spot_instance_request_id" = ""
-    "subnet_id" = "subnet-0d89aa23371aa3eb0"
-    "tags" = tomap({
-      "Component" = "Backend"
-      "Name" = "frontend"
-      "Project" = "expense"
-    })
-    "tags_all" = tomap({
-      "Component" = "Backend"
-      "Name" = "frontend"
-      "Project" = "expense"
-    })
-    "tenancy" = "default"
-    "timeouts" = null /* object */
-    "user_data" = tostring(null)
-    "user_data_base64" = tostring(null)
-    "user_data_replace_on_change" = false
-    "volume_tags" = tomap(null) /* of string */
-    "vpc_security_group_ids" = toset([
-      "sg-0ba83694128d1978c",
-    ])
-  }
+[
+      + {
+          + ami                                  = "ami-09c813fb71547fc4f"
+          + arn                                  = (known after apply)
+          + associate_public_ip_address          = (known after apply)
+          + availability_zone                    = (known after apply)
+          + capacity_reservation_specification   = (known after apply)
+          + cpu_core_count                       = (known after apply)
+          + cpu_options                          = (known after apply)
+          + cpu_threads_per_core                 = (known after apply)
+          + credit_specification                 = []
+          + disable_api_stop                     = (known after apply)
+          + disable_api_termination              = (known after apply)
+          + ebs_block_device                     = (known after apply)
+          + ebs_optimized                        = (known after apply)
+          + enable_primary_ipv6                  = (known after apply)
+          + enclave_options                      = (known after apply)
+          + ephemeral_block_device               = (known after apply)
+          + get_password_data                    = false
+          + hibernation                          = null
+          + host_id                              = (known after apply)
+          + host_resource_group_arn              = (known after apply)
+          + iam_instance_profile                 = (known after apply)
+          + id                                   = (known after apply)
+          + instance_initiated_shutdown_behavior = (known after apply)
+          + instance_lifecycle                   = (known after apply)
+          + instance_market_options              = (known after apply)
+          + instance_state                       = (known after apply)
+          + instance_type                        = "t2.micro"
+          + ipv6_address_count                   = (known after apply)
+          + ipv6_addresses                       = (known after apply)
+          + key_name                             = (known after apply)
+          + launch_template                      = []
+          + maintenance_options                  = (known after apply)
+          + metadata_options                     = (known after apply)
+          + monitoring                           = (known after apply)
+          + network_interface                    = (known after apply)
+          + outpost_arn                          = (known after apply)
+          + password_data                        = (known after apply)
+          + placement_group                      = (known after apply)
+          + placement_partition_number           = (known after apply)
+          + primary_network_interface_id         = (known after apply)
+          + private_dns                          = (known after apply)
+          + private_dns_name_options             = (known after apply)
+          + private_ip                           = (known after apply)
+          + public_dns                           = (known after apply)
+          + public_ip                            = (known after apply)
+          + root_block_device                    = (known after apply)
+          + secondary_private_ips                = (known after apply)
+          + security_groups                      = (known after apply)
+          + source_dest_check                    = true
+          + spot_instance_request_id             = (known after apply)
+          + subnet_id                            = (known after apply)
+          + tags                                 = {
+              + Component = "Backend"
+              + Name      = "mysql"
+              + Project   = "expense"
+            }
+          + tags_all                             = {
+              + Component = "Backend"
+              + Name      = "mysql"
+              + Project   = "expense"
+            }
+          + tenancy                              = (known after apply)
+          + timeouts                             = null
+          + user_data                            = (known after apply)
+          + user_data_base64                     = (known after apply)
+          + user_data_replace_on_change          = false
+          + volume_tags                          = null
+          + vpc_security_group_ids               = (known after apply)
+        },
+      + {
+          + ami                                  = "ami-09c813fb71547fc4f"
+          + arn                                  = (known after apply)
+          + associate_public_ip_address          = (known after apply)
+          + availability_zone                    = (known after apply)
+          + capacity_reservation_specification   = (known after apply)
+          + cpu_core_count                       = (known after apply)
+          + cpu_options                          = (known after apply)
+          + cpu_threads_per_core                 = (known after apply)
+          + credit_specification                 = []
+          + disable_api_stop                     = (known after apply)
+          + disable_api_termination              = (known after apply)
+          + ebs_block_device                     = (known after apply)
+          + ebs_optimized                        = (known after apply)
+          + enable_primary_ipv6                  = (known after apply)
+          + enclave_options                      = (known after apply)
+          + ephemeral_block_device               = (known after apply)
+          + get_password_data                    = false
+          + hibernation                          = null
+          + host_id                              = (known after apply)
+          + host_resource_group_arn              = (known after apply)
+          + iam_instance_profile                 = (known after apply)
+          + id                                   = (known after apply)
+          + instance_initiated_shutdown_behavior = (known after apply)
+          + instance_lifecycle                   = (known after apply)
+          + instance_market_options              = (known after apply)
+          + instance_state                       = (known after apply)
+          + instance_type                        = "t2.micro"
+          + ipv6_address_count                   = (known after apply)
+          + ipv6_addresses                       = (known after apply)
+          + key_name                             = (known after apply)
+          + launch_template                      = []
+          + maintenance_options                  = (known after apply)
+          + metadata_options                     = (known after apply)
+          + monitoring                           = (known after apply)
+          + network_interface                    = (known after apply)
+          + outpost_arn                          = (known after apply)
+          + password_data                        = (known after apply)
+          + placement_group                      = (known after apply)
+          + placement_partition_number           = (known after apply)
+          + primary_network_interface_id         = (known after apply)
+          + private_dns                          = (known after apply)
+          + private_dns_name_options             = (known after apply)
+          + private_ip                           = (known after apply)
+          + public_dns                           = (known after apply)
+          + public_ip                            = (known after apply)
+          + root_block_device                    = (known after apply)
+          + secondary_private_ips                = (known after apply)
+          + security_groups                      = (known after apply)
+          + source_dest_check                    = true
+          + spot_instance_request_id             = (known after apply)
+          + subnet_id                            = (known after apply)
+          + tags                                 = {
+              + Component = "Backend"
+              + Name      = "backend"
+              + Project   = "expense"
+            }
+          + tags_all                             = {
+              + Component = "Backend"
+              + Name      = "backend"
+              + Project   = "expense"
+            }
+          + tenancy                              = (known after apply)
+          + timeouts                             = null
+          + user_data                            = (known after apply)
+          + user_data_base64                     = (known after apply)
+          + user_data_replace_on_change          = false
+          + volume_tags                          = null
+          + vpc_security_group_ids               = (known after apply)
+        },
+      + {
+          + ami                                  = "ami-09c813fb71547fc4f"
+          + arn                                  = (known after apply)
+          + associate_public_ip_address          = (known after apply)
+          + availability_zone                    = (known after apply)
+          + capacity_reservation_specification   = (known after apply)
+          + cpu_core_count                       = (known after apply)
+          + cpu_options                          = (known after apply)
+          + cpu_threads_per_core                 = (known after apply)
+          + credit_specification                 = []
+          + disable_api_stop                     = (known after apply)
+          + disable_api_termination              = (known after apply)
+          + ebs_block_device                     = (known after apply)
+          + ebs_optimized                        = (known after apply)
+          + enable_primary_ipv6                  = (known after apply)
+          + enclave_options                      = (known after apply)
+          + ephemeral_block_device               = (known after apply)
+          + get_password_data                    = false
+          + hibernation                          = null
+          + host_id                              = (known after apply)
+          + host_resource_group_arn              = (known after apply)
+          + iam_instance_profile                 = (known after apply)
+          + id                                   = (known after apply)
+          + instance_initiated_shutdown_behavior = (known after apply)
+          + instance_lifecycle                   = (known after apply)
+          + instance_market_options              = (known after apply)
+          + instance_state                       = (known after apply)
+          + instance_type                        = "t2.micro"
+          + ipv6_address_count                   = (known after apply)
+          + ipv6_addresses                       = (known after apply)
+          + key_name                             = (known after apply)
+          + launch_template                      = []
+          + maintenance_options                  = (known after apply)
+          + metadata_options                     = (known after apply)
+          + monitoring                           = (known after apply)
+          + network_interface                    = (known after apply)
+          + outpost_arn                          = (known after apply)
+          + password_data                        = (known after apply)
+          + placement_group                      = (known after apply)
+          + placement_partition_number           = (known after apply)
+          + primary_network_interface_id         = (known after apply)
+          + private_dns                          = (known after apply)
+          + private_dns_name_options             = (known after apply)
+          + private_ip                           = (known after apply)
+          + public_dns                           = (known after apply)
+          + public_ip                            = (known after apply)
+          + root_block_device                    = (known after apply)
+          + secondary_private_ips                = (known after apply)
+          + security_groups                      = (known after apply)
+          + source_dest_check                    = true
+          + spot_instance_request_id             = (known after apply)
+          + subnet_id                            = (known after apply)
+          + tags                                 = {
+              + Component = "Backend"
+              + Name      = "frontend"
+              + Project   = "expense"
+            }
+          + tags_all                             = {
+              + Component = "Backend"
+              + Name      = "frontend"
+              + Project   = "expense"
+            }
+          + tenancy                              = (known after apply)
+          + timeouts                             = null
+          + user_data                            = (known after apply)
+          + user_data_base64                     = (known after apply)
+          + user_data_replace_on_change          = false
+          + volume_tags                          = null
+          + vpc_security_group_ids               = (known after apply)
+        },
+    ]
