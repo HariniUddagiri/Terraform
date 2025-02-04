@@ -41,7 +41,7 @@ variable "sg_tags" {
 }
 
 variable "zone_id" {
-  default = "Z10232423FVKYCFNEYN3P"
+  default = "Z05611751A8ODB04RJUX3"
 }
 
 variable "domainname" {
