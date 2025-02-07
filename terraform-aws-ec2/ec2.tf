@@ -5,19 +5,19 @@ resource "aws_instance" "ec2" {
   tags = var.ec2_tags
 }
 
-resource "aws_security_group" "sg" {
+resource "aws_security_group" "allow_all" {
   name ="allowall"
   description = "moduleexplore"
 
-  ingress = {
+  ingress {
     from_port=22
     to_port=22
     protocol="tcp"
-    cidr_blocks="[0.0.0.0/0]"
+    cidr_blocks=["0.0.0.0/0"]
 
   }
 
-  egress = {
+  egress {
     from_port=0
     to_port=0
     protocol=-"-1"
