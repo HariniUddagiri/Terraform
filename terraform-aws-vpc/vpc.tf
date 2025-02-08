@@ -1,5 +1,5 @@
 module "vpc" {
-  source = "../vpc-module"
+  source = "../vpc-module_necessaries"
   project = var.project
   environment = var.environment
   commontags = var.commontags
