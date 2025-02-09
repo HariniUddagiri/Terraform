@@ -5,3 +5,7 @@ output "az_info" {
 output "subnets_info" {
   value=aws_subnet.public
 }
+
+output "vpc_id" {
+  value = aws_vpc.this.id
+}
